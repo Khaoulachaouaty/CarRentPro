@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace = "iset.project.carrentpro"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "iset.project.carrentpro"
