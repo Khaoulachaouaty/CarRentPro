@@ -8,4 +8,8 @@
     <style name="Theme.CarRentPro" parent="Base.Theme.CarRentPro" />
     <style name="SplashScreenTheme" parent="Theme.AppCompat.NoActionBar"/>
 
+    <style name="HintText" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">12sp</item> <!-- Adjust the size as needed -->
+        <item name="android:textStyle">italic</item>
+    </style>
 </resources>

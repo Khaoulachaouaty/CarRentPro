@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Title TextView -->
+
+    <!-- Name EditText -->
+
+    <!-- Email EditText -->
+
+    <!-- Password EditText -->
+
+    <!-- Confirm Password EditText -->
+
+    <!-- Signup Button -->
+
+    <ToggleButton
+        android:id="@+id/toggleButtonShowPassword"
+        android:layout_width="26dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/ic_show_password_selector"
+        android:textOff=""
+        android:textOn=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/editTextPassword" />
+
+    <ToggleButton
+        android:id="@+id/toggleButtonShowConfirmPassword"
+        android:layout_width="26dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/ic_show_password_selector"
+        android:textOff=""
+        android:textOn=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editTextConfirmPassword" />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="113dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="152dp"
+        android:text="Sign Up"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="305dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/rounded_corners"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:paddingLeft="8dp"
+        android:textAppearance="@style/HintText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewTitle" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="305dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rounded_corners"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="8dp"
+        android:textAppearance="@style/HintText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextName" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="305dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="24dp"
+        android:paddingLeft="8dp"
+        android:background="@drawable/rounded_corners"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textAppearance="@style/HintText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextEmail" />
+
+    <EditText
+        android:id="@+id/editTextConfirmPassword"
+        android:layout_width="305dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rounded_corners"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:paddingLeft="8dp"
+        android:textAppearance="@style/HintText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextPassword" />
+
+    <TextView
+        android:id="@+id/textViewConnectOption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:onClick="onConnectOptionClick"
+        android:text="Already have an account? Connect here."
+        android:textColor="@color/Crow_blue"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonSignUp" />
+
+    <Button
+        android:id="@+id/buttonSignUp"
+        android:layout_width="196dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="@color/Crow_blue"
+        android:paddingLeft="8dp"
+        android:text="Sign Up"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextConfirmPassword" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
